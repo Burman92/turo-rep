@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none; /* removes the border on focus */
+}
+
+.header__search input {
+  border: none;
+  border-bottom: 1px solid rgb(9, 8, 8);
+  outline: none; /* removes the border on focus */
+}
+
+.header__logo {
+  margin-right: 20px;
+}

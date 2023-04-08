@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  express-services:
+    container_name: Turo
+
+    build: .
+
+    volumes: 
+      - ./:/app:Z
+
+    ports:
+      - "8100:8100"
+
+
+    command: ["nodemon", "index.js"]
+
+  postgres-db-turo:
+    container_name: postgres-db-turo
+    image: postgres:latest
+    restart: always
+    environment:
+      DATABASE_HOST: postgres-db-turo
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: Turo_webpage
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init/migrate_seed.SQL:/docker-entrypoint-initdb.d/seed.sql
+
+
+  pgadmin:
+        image: dpage/pgadmin4:latest
+        container_name: pgAdmin
+        restart: always
+        environment:
+            PGADMIN_DEFAULT_EMAIL: burmanbed@gmail.com
+            PGADMIN_DEFAULT_PASSWORD: password
+        ports:
+            - "8080:80"
+        volumes:
+            - pgadmin-data:/var/lib/pgadmin
+        depends_on:
+            - postgres-db-turo
+
+volumes:
+  pgadmin-data:
