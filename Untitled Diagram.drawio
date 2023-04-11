@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-11T22:00:01.893Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="SEsrEcPkAKojZzzm3Mb3" version="21.1.6" type="gitlab" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-04-11T22:17:29.690Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="gU1c2a8wMJJ1khMT8N7g" version="21.1.6" type="gitlab" pages="2">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ERD">
     <mxGraphModel dx="2524" dy="1864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -800,7 +800,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="x6vXv2D5utWcbASCPqfF-14" value="car_id (int)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="1" vertex="1">
-          <mxGeometry x="-361.5" y="804" width="340" height="30" as="geometry">
+          <mxGeometry x="-361.5" y="804" width="171.5" height="30" as="geometry">
             <mxRectangle width="340" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
